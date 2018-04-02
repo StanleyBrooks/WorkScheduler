@@ -38,10 +38,10 @@ monday_availability_fixed = employee_preferences.loc[(employee_preferences["day1
 #Append dataframes together
 monday_availability = monday_availability_non_fixed.append(monday_availability_fixed)
 
-#Show all employees available to work on monday
-print(monday_availability)
-
 #Get the number available workers
 number_of_workers_monday = len(monday_availability)
 
-print("On monday there are {} available employee".format(number_of_workers_monday))
+#Show all employees available to work on monday
+print(monday_availability)
+
+print("On monday there are {} available employees".format(number_of_workers_monday))
